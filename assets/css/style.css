@@ -1,3 +1,7 @@
-body {
-    background-color: aqua;
+#front-image {
+    background-image: url(../images/entering.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 1000px;
+    height: 600px;
 }
