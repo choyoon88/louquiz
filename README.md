@@ -1,108 +1,163 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# BeatFit
 
-Welcome choyoon88,
+BeatFit is a site for people who wish to challenge more of their exercise goal by comparing their results with other peers. BeatFit is beneficial not only to the experienced person in workout but to whom wish to start their own exercise. By comparing your exercise goal with others gives you the motivation to keep on doing better than you can and by this workout beginners will easily make it as a habit. For those workout buffs could set a higher goal for making a better and healthy body.
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
 
-You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **September 1, 2021**
+## Features
 
-## Gitpod Reminders
+### Existing Features
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
+- __Navigation Bar__
 
-`python3 -m http.server`
+  - Featured on all four pages. Navigation bar links to the Home, Timetable, Gallery and Join. Logo on the very left side leads to the home page. 
+  - This section will allow the user to easily navigate from page to page across all devices without having to revert back to the previous page via the ‘back’ button. 
 
-A blue button should appear to click: _Make Public_,
+  ![Nav Bar](readme-image/navbar.png)
 
-Another blue button should appear to click: _Open Browser_.
+- __Main Background Image__
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
+  - The main background image consists of three different workout related images rotating by slowly overlapping the previous one, and will stand as a default background image across all pages. 
 
-A blue button should appear to click: _Make Public_,
+  ![Main Background Image](readme-image/homepage.png)
 
-Another blue button should appear to click: _Open Browser_.
+- __Why Join BeatFit Section__
 
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+  - Why Join BeatFit has two sections; brief reasoning for why working out together is good, and why choose BeatFit for that reason. 
+  - Users will seek why it could be benificial to workout together and this will make the users get interested in joining BeatFit. 
 
-To log into the Heroku toolbelt CLI:
+  ![Why Join BeatFit](readme-image/homepage-about.png)
 
-1. Log in to your Heroku account and go to *Account Settings* in the menu under your avatar.
-2. Scroll down to the *API Key* and click *Reveal*
-3. Copy the key
-4. In Gitpod, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
+- __TimeTable__
 
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
+  - This section will allow the user to see the full weekly based schedules for every day and see which day will meet their workout plan. 
+  
+  ![Timetable](readme-image/timetable.png)
 
-------
+- __Gallery__
 
-## Release History
+  - Gallery will provide the users with supporting images to see how the gym and the whole workout scene would look like. 
 
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
+  ![Gallery](readme-image/gallery.png)
 
-**September 1 2021:** Remove `PGHOSTADDR` environment variable.
+- __Join Page__
 
-**July 19 2021:** Remove `font_fix` script now that the terminal font issue is fixed.
+  - This page will allow the user to get signed up to BeatFit to start their workout journey by comparing with others. The user will be asked to fill in their first name, last name and email address as a mandatory field. Users could choose which days will fit their schedule during the week.
 
-**July 2 2021:** Remove extensions that are not available in Open VSX.
+  ![Join](readme-image/join.png)
 
-**June 30 2021:** Combined the P4 and P5 templates into one file, added the uptime script. See the FAQ at the end of this file.
+- __Thanks for Joining page__
 
-**June 10 2021:** Added: `font_fix` script and alias to fix the Terminal font issue
+  - This page will show up once the users sign up for joining BeatFit. 
+  - The user will be notified that there will expect an email sent to the email address they entered for joining. The function for this will be added later. 
 
-**May 10 2021:** Added `heroku_config` script to allow Heroku API key to be stored as an environment variable.
+  ![Join](readme-image/afterjoina.png)
 
-**April 7 2021:** Upgraded the template for VS Code instead of Theia.
+- __The Footer__ 
 
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
+  - The footer section includes links to the relevant social media sites for BeatFit. The links will open to a new tab to allow easy navigation for the user. 
+  - The footer is valuable to the user as it encourages them to keep connected via social media.
 
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
+  ![Footer](readme-image/footer.png)
 
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
+## Testing 
 
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
+### Validator Testing 
 
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
+#### __HTML__
+  - On all html pages, two issues were found during the check over [W3C Validator check](https://validator.w3.org/#validate_by_input)
 
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
+    - Warning: Section lacks heading. Consider using h2-h6 elements to add identifying headings to all sections, or else use a div element instead for any cases where no heading is needed. From line 31, column 5; to line 31, column 28
+      > Changed section to div and solved the issue.
 
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
+    - Error: Stray start tag footer. From line 59, column 1; to line 59, column 8
+      > Placed the footer inside the body and fixed the issue.
 
-------
+  - On gallery.html, one issue was found during the check over [W3C Validator check](https://validator.w3.org/#validate_by_input)
 
-## FAQ about the uptime script
+    - Warning: Section lacks heading. Consider using h2-h6 elements to add identifying headings to all sections, or else use a div element instead for any cases where no heading is needed. From line 35, column 5; to line 35, column 26
+      > Changed section to div and solved the issue.
 
-**Why have you added this script?**
+#### __CSS__
+  - No errors or bugs were found when passing through the official [W3C Validator check](https://validator.w3.org/#validate_by_input)
 
-It will help us to calculate how many running workspaces there are at any one time, which greatly helps us with cost and capacity planning. It will help us decide on the future direction of our cloud-based IDE strategy.
+### Unfixed Bugs
+  - There is no unfixed bugs. 
 
-**How will this affect me?**
+### Functional Testing
+  - Functional testing performed for every single actions that could be taken within the website. If the actual behavior is the same as the expected behavior, it will be marked with P for pass, or not F for fail. 
 
-For everyday usage of Gitpod, it doesn’t have any effect at all. The script only captures the following data:
+| Action | Expected Behavior    | Actual Behavior    |
+| :---:   | :---: | :---: |
+| Enter the browser with the url link: https://choyoon88.github.io/beatfit/ | Enter the home page   | P   |
+| Click BEAT FIT | Direct to home page   | P   |
+| Click HOME | Direct to home page   | P   |
+| Click TIMETABLE | Direct to timetable page with a timetable displayed on the bottom of the page   | P   |
+| Click GALLERY | Direct to gallery with images displayed   | P   |
+| Click JOIN | Direct to joining page with joining form   | P   |
+| From JOIN, click Join the Team without typing anything | Popup message 'Please fill in this field' should show up on First Name text bar  | P   |
+| From JOIN, input only the First Name, and click Join the Team | Popup message 'Please fill in this field' should show up on Last Name text bar   | P   |
+| From JOIN, input only the Last Name, and click Join the Team | Popup message 'Please fill in this field' should show up on First Name text bar   | P   |
+| From JOIN, input only the Email, and click Join the Team | Popup message 'Please fill in this field' should show up on First Name text bar   | P   |
+| From JOIN, input only the First Name and Last Name, and click Join the Team | Popup message 'Please fill in this field' should show up on Email text bar   | P   |
+| From JOIN, input First Name, Last Name and the Email but with an incorrect email address format, and click Join the Team | Popup message "Please include @ in the email address. '*typed content*' is missing an @" should show up on Email Text bar  | P   |
+| From JOIN, input First Name, Last Name and the Email with correct email address format | Direct to a 'thanks for joining' page   | P   |
+| From JOIN, select any day/s from 'Which day do you prefer' and do not enter anything, and click Join the Team | Popup message 'Please fill in this field' should show up on First Name text bar   | P   |
+| From the Footer, click Instagram icon | Instagram website opens on a new tab   | P   |
+| From the Footer, click Twitter icon | Twitter website opens on a new tab   | P   |
+| From the Footer, click Youtube icon | Youtube website opens on a new tab   | P   |
 
-- An ID that is randomly generated each time the workspace is started.
-- The current date and time
-- The workspace status of “started” or “running”, which is sent every 5 minutes.
 
-It is not possible for us or anyone else to trace the random ID back to an individual, and no personal data is being captured. It will not slow down the workspace or affect your work.
+### How It Works on Different Screen Size Device
+  - This website is desiged to adapt on different screen size devices. 
+  - **The background image** adapts to different screen sizes and maintains the same resolution to function as a background without being overlapped or cropped. 
+    
+    ![background](readme-image/homepage-smaller.png)
 
-**So….?**
+  - **Why Join Beatfit** have a different background color sizing applied so that the paragraph does not overlap the background. Two sections will then show vertically (right-inline will drop down) placed once the screen width is less than 700px.
 
-We want to tell you this so that we are being completely transparent about the data we collect and what we do with it.
+    ![whyjoinimage](readme-image/whybeatfit.png)
 
-**Can I opt out?**
+  - **Timetable** also drops down as lining vertically once the screen width is less than 900px.
 
-Yes, you can. Since no personally identifiable information is being captured, we'd appreciate it if you let the script run; however if you are unhappy with the idea, simply run the following commands from the terminal window after creating the workspace, and this will remove the uptime script:
+    ![timetable](readme-image/timtable01.png)
 
-```
-pkill uptime.sh
-rm .vscode/uptime.sh
-```
+  - **Join Form** will be adjusted to move to the left once the screen width is smaller than 800px. 
 
-**Anything more?**
+    ![joinform](readme-image/joinsmaller.png) 
 
-Yes! We'd strongly encourage you to look at the source code of the `uptime.sh` file so that you know what it's doing. As future software developers, it will be great practice to see how these shell scripts work.
+## Deployment
 
----
+- The site was deployed to GitHub pages. The steps to deploy are as follows: 
+  - In the GitHub repository, navigate to the Settings tab.
+  - From the Code and automation menu, select the Pages.
+  - From the Build and deployment section, selected the branch to have Main and /root, then hit save. 
+  - Once the saved, the page will be automatically be refreshed and on top of the Github Pages section, the deployed page could be found after 'Your site is live at.'
 
-Happy coding!
+The live link can be found here - https://choyoon88.github.io/beatfit/
+
+## Local Deployment
+
+- Local deployment could be done following the steps. 
+  1. From my Gitpod BeatFit repository, click '<>Code' right next to green 'Gitpod' icon. 
+  2. Select 'local' and HTTPS.
+  3. Copy the HTTPS address: https://github.com/choyoon88/beatfit.git
+  4. Open terminal on the Mac computer.
+  5. Type **_git clone_** and paste the HTTPS address. 
+  6. Install the git developer tools and download the command line in your computer. 
+
+
+## Credits 
+
+### Support
+
+Useful links for validation and help:
+
+- https://www.w3schools.com/
+Searched for assistance and tips
+
+### Content 
+
+- The icons in the footer were taken from [Font Awesome](https://fontawesome.com/)
+
+### Media
+
