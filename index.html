@@ -1,27 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&family=Pathway+Gothic+One&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="assets/css/style.css">
     <title>TLOU Quiz</title>
 </head>
+
 <body>
     <h1 class="head">How geek RU?</h1>
-    <h2 class="subhead">The Last of Us Quiz Challenge</h2>
+    <h2 class="subhead"><span id="lou">The Last of Us</span> Quiz Challenge</h2>
     <div class="game-area">
-        <div id="front-image" class="hidden"></div>
+        <div>
+            <p class="question-area hidden">Question</p>
+        </div>
+        <div id="front-image"></div>
     </div>
-
+    <br>
     <div class="start-button"><button onclick="startGame()">START!</button></div>
+    <div class="reset-button"><button onclick="resetGame()">RESET</button></div>
 
     <div class="score-area">
-        <p class="scores">Correct: <span id="score">0</span></p>
-        <p class="scores">Incorrect: <span id="score">0</span></p>
+        <p class="scores">Correct Answer: <span id="score">0</span></p>
+        <p class="scores">Incorrect Answer: <span id="score">0</span></p>
     </div>
-    
-    
-<script src="assets/js/script.js"></script>
+
+
+    <script src="assets/js/script.js"></script>
 </body>
+
 </html>

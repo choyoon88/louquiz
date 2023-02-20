@@ -154,6 +154,7 @@ Useful links for validation and help:
 
 - https://www.w3schools.com/
 Searched for assistance and tips
+- Game questions taken from: https://twinfinite.net/2022/08/the-hardest-the-last-of-us-trivia-quiz-youll-ever-take/
 
 ### Content 
 

@@ -1,17 +1,17 @@
 #front-image {
-    background-image: url(../images/entering.jpeg);
-    background-repeat: no-repeat;
+    background: url(../images/entering.jpeg) no-repeat center center;
     background-size: cover;
+    overflow: hidden;
     display: block;
-    
+
     margin-left: auto;
     margin-right: auto;
-    width: 80%;
+    width: 60%;
     height: 600px;
 }
 
 .hidden {
-    display: none !important;
+    visibility: hidden !important;
 }
 
 .head {
@@ -22,10 +22,41 @@
     text-align: center;
 }
 
+.question-area {
+    text-align: center;
+}
+
 .score-area {
     text-align: center;
 }
 
-.start-button {
+.scores {
+    display: inline-block;
+    padding: 25px;
+}
+
+.start-button, .reset-button {
     text-align: center;
+}
+
+h1, h2, p {
+    font-family: 'Pathway Gothic One', sans-serif;
+}
+
+h1 {
+    font-size: 4em;
+}
+
+h2 {
+    font-size: 3em;
+}
+
+p {
+    font-size: 2em;
+}
+
+#lou {
+    color: rgb(244, 216, 59);
+    text-transform: uppercase;
+    font-size: 1.2em;
 }
