@@ -23,8 +23,9 @@
         <div id="front-image"></div>
     </div>
     <br>
-    <div class="start-button"><button onclick="startGame()">START!</button></div>
-    <div class="reset-button"><button onclick="resetGame()">RESET</button></div>
+    <div class="start-button"><button data-type="start" onclick="startGame()">START!</button></div>
+    <div class="reset-button hidden"><button data-type="reset" onclick="resetGame()">RESET</button></div>
+    <div class="next-button hidden"><button data-type="next" onclick="nextGame()">NEXT</button></div>
 
     <div class="score-area">
         <p class="scores">Correct Answer: <span id="score">0</span></p>
