@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", function () {
     for (let button of buttons) {
         button.addEventListener('click', function () {
             if (this.getAttribute('data-type') === 'start') {
-                alert('You clicked START');
+                startGame();
             } else {
                 let btn = this.getAttribute('data-type');
                 alert(`You clicked ${btn}`);
@@ -64,13 +64,22 @@ let myQuestion = [{
         },
         correctAnswer: '3'
     }
-]
+];
 
-function startGame(question, answers) {
+function startGame() {
+    //display the question
+    
+    for(i = 0; i < myQuestion.length; i++) {
+        
+        let questionTitle = document.getElementsByClassName('question-area').innerHTML; 
+        questionTitle.textContent = myQuestion[i].question;
+            
+    //display answer options
+        let questionAnswers = document.getElementsByClassName('answer-area').innerHTML;
+        questionAnswers.textContent = myQuestion[i].answers;
 
     //change the image related to the first question
-    //display the question
-    //display answer options
+    }
 }
 
 function nextGame() {
