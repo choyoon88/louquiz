@@ -152,9 +152,12 @@ The live link can be found here - https://choyoon88.github.io/beatfit/
 
 Useful links for validation and help:
 
+- https://www.youtube.com/watch?v=riDzcEQbX6k
+Basic JavaScript Structure for building the question functions.
 - https://www.w3schools.com/
-Searched for assistance and tips
-- Game questions taken from: https://twinfinite.net/2022/08/the-hardest-the-last-of-us-trivia-quiz-youll-ever-take/
+Searched for assistance and tips.
+- https://twinfinite.net/2022/08/the-hardest-the-last-of-us-trivia-quiz-youll-ever-take/
+Taken game questions.
 
 ### Content 
 
