@@ -128,10 +128,7 @@ function resetState() {
     while (answerButtonsElement.firstChild) {
         answerButtonsElement.removeChild(answerButtonsElement.firstChild);
     }
-    //shuffle to the next game question
-    //display the next question
-    //display the next question image
-    //display the next select options
+    
 }
 
 function selectAnswer(e) {
@@ -147,12 +144,6 @@ function selectAnswer(e) {
         startButton.innerText = 'Restart';
         startButton.classList.remove('hidden');
     }
-   
-    //change to the answer image
-    //display green correct check icon
-    //display text Correct!
-    //display explanation to the answer
-    //display the correct answer option with green text color
 }
 
 function setStatusClass(element, correct) {
