@@ -40,7 +40,8 @@
 .controls {    
     position: absolute;
     left: 45em;
-    bottom: 1em;
+    bottom: -2em;
+    
 }
 
 .start-button, .reset-button, .next-button {
