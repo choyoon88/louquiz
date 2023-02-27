@@ -45,7 +45,7 @@ const myQuestion = [{
             {text: 'Toy robot', correct: true}
         ],
         image: document.getElementsByClassName('toy'),
-        explain: `Ellie takes the toy robot from a toy shop when Sam was told to get rid of that by his brother Henry. Ellie keeps the toy robot and it can be seen in Ellie's room at the start of the second game.`
+        explain: `Ellie takes the toy robot from a toy shop when Sam was told to get rid of that by his brother Henry. Ellie keeps the toy robot when Henry's back was turned. She still keeps that and it can be seen in Ellie's room at the start of the second game.`
     },
     {
         question: 'Which of these buttons is NOT on Ellie\'s original backpack?',
