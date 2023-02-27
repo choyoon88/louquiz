@@ -100,6 +100,14 @@ p {
     font-size: 2em;
 }
 
+#explanation {
+    position: absolute;
+    bottom: -2rem;
+    color: rgba(241, 240, 234, 0.879);
+    padding: 26px;
+
+}
+
 #lou {
     color: rgb(244, 216, 59);
     text-transform: uppercase;
