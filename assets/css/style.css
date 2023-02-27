@@ -10,6 +10,26 @@
     height: 500px;
 }
 
+.anna {
+    background: url(../images/anna.png);
+}
+
+.giraffe {
+    background: url(../images/giraffe.png);
+}
+
+.toy {
+    background: url(../images/toyrobot.png);
+}
+
+.sticker {
+    background: url(../images/Ellie_Backpack.png);
+}
+
+.argentina {
+    background: url(../images/sarah_argentina.png);
+}
+
 .hidden {
     visibility: hidden !important;
 }
@@ -27,8 +47,7 @@
     padding: 0;
     margin: 0;
     width: 100vw;
-    height: 10vh;
-   
+    height: 10vh;   
     justify-content: center;
     align-items: center;
 }
@@ -44,10 +63,6 @@
     
 }
 
-.start-button, .reset-button, .next-button {
-    text-align: center;
-}
-
 h1, h2, p, .font, button {
     font-family: 'Pathway Gothic One', sans-serif;
 }
@@ -61,7 +76,17 @@ h1, h2, p, .font, button {
     margin: 10px;
 }
 
+button.correct {
+    color: green;
+}
 
+button.wrong {
+    color: red;
+}
+
+#start-btn, #next-btn {
+    font-size: 3em;
+}
 
 h1 {
     font-size: 4em;
