@@ -158,6 +158,8 @@ Basic JavaScript Structure for building the question functions.
 Searched for assistance and tips.
 - https://twinfinite.net/2022/08/the-hardest-the-last-of-us-trivia-quiz-youll-ever-take/
 Taken game questions.
+- https://chat.openai.com/
+Chat GPT was most helpful when asking questions of the function of my codes. Also I got assistance of how to create additional functions. (e.g. How to prevent the user from adding more than 1 to the score when clicking the answer multiple times, How to reset increment scores when clicking restart etc.)
 
 ### Content 
 

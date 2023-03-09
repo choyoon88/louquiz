@@ -1,19 +1,6 @@
-// document.addEventListener("DOMContentLoaded", function() {
-//     let buttons = document.getElementsByTagName('button');
-
-//     for (let button of buttons) {
-//         button.addEventListener('click', function() {
-//             if (this.getAttribute('data-type') === 'start') {
-//                 startGame();
-//             } else {
-//                 let btn = this.getAttribute('data-type');
-//                 alert(`You clicked ${btn}`);
-//             }
-//         })
-//     }
-
-// })
-
+/**
+ * My question and answer list
+ */
 const myQuestion = [{
         question: `What is the name of Ellie's mother?`,
         answers: [
@@ -92,9 +79,15 @@ nextButton.addEventListener('click', () => {
     hideExplanation.classList.add('hidden');
 })
 
-
+/**
+ * Hide the start button once clicking the start.
+ * Display questions randomly.
+ * Remove hidden for the question container so the question and the answer options
+ * to show up.
+ */
 function startGame() {
-       
+    document.getElementById('correct-num').innerText = '0';
+    document.getElementById('incorrect-num').innerText = '0';
     startButton.classList.add('hidden');
     shuffledQuestion = myQuestion.sort(() => Math.random() - .5);
     currentQuestionIndex = 0;
@@ -125,16 +118,30 @@ function showQuestion(myQuestion) {
     })
 }
 
+/**
+ * Hide the next button.
+ * Remove all the answer option's first child node 
+ * until there is no more child node to remove
+ * so that we can set up a new answer options.
+ */
 function resetState() {
     nextButton.classList.add('hidden');
     while (answerButtonsElement.firstChild) {
         answerButtonsElement.removeChild(answerButtonsElement.firstChild);
-    }    
+    }
+    answerButtonsElement.classList.remove('clicked');
 }
 
 function selectAnswer(e) {
     const selectedButton = e.target;
     const correct = selectedButton.dataset.correct;
+
+    // check if the button has already been clicked
+    if (answerButtonsElement.classList.contains('clicked')) {
+        return;
+    }    
+    // add the clicked class to the button
+    answerButtonsElement.classList.add('clicked');
    
     setStatusClass(document.body, correct);
     Array.from(answerButtonsElement.children).forEach(button => {
@@ -148,6 +155,11 @@ function selectAnswer(e) {
     }
     explantionEl.innerText = shuffledQuestion[currentQuestionIndex].explain;
     explantionEl.classList.remove('hidden');
+    if (correct === 'true') {
+        incrementScore();
+    } else {
+        incrementWrongScore();
+    }
 }
 
 function setStatusClass(element, correct) {
@@ -165,9 +177,13 @@ function clearStatusClass(element) {
 }
 
 function incrementScore() {
+    let oldScore = parseInt(document.getElementById('correct-num').innerText);
+    document.getElementById('correct-num').innerText = ++oldScore;
     //increment score by +1 when correct answer was selected
 }
 
 function incrementWrongScore() {
+    let oldScore = parseInt(document.getElementById('incorrect-num').innerText);
+    document.getElementById('incorrect-num').innerText = ++oldScore;
     //increment score by +1 when incorrect answer was selected
 }
