@@ -10,7 +10,7 @@ const myQuestion = [{
             { text: 'Mia', correct: false}
         ], 
         image: '', 
-        explain: `While we never meet, Ellie's mother leaves a letter to Ellie before she dies and in the letter we learn her name is Anna.`    
+        explain: `Ellie's mother leaves a letter to Ellie before she dies and in the letter we learn her name is Anna.`    
     },
     {
         question: 'What animal constantly pops up in the background throughout the first game?',
@@ -21,7 +21,7 @@ const myQuestion = [{
             {text: 'Giraffe', correct: true}
         ], 
         image: '', 
-        explain: `From Sarah's room to the movie theater called Giraffe Park, giraffes are all over the first game in the series. All of this leads up to the beautiful scene where Ellie meets one for the first time.`
+        explain: `From Sarah's room to the movie theater called Giraffe Park, giraffes are all over the first game in the series, leading to a scene where Ellie meets one for the first time.`
     },
     {
         question: 'What item does Ellie keep of Sam\'s that can be seen in her room at the start of The Last of Us Part II?',
@@ -32,7 +32,7 @@ const myQuestion = [{
             {text: 'Toy robot', correct: true}
         ],
         image: '',
-        explain: `Ellie takes the toy robot from a toy shop when Sam was told to get rid of that by his brother Henry. Ellie keeps the toy robot when Henry's back was turned. She still keeps that and it can be seen in Ellie's room at the start of the second game.`
+        explain: `Sam had to get rid of the toy robot in Part 1. Ellie keeps it in her room that can be found at the start of the Part 2.`
     },
     {
         question: 'Which of these buttons is NOT on Ellie\'s original backpack?',
