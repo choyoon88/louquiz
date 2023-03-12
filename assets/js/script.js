@@ -9,7 +9,7 @@ const myQuestion = [{
             { text: 'Michela', correct: false },
             { text: 'Mia', correct: false}
         ], 
-        image: document.getElementsByClassName('anna'), 
+        image: '', 
         explain: `While we never meet, Ellie's mother leaves a letter to Ellie before she dies and in the letter we learn her name is Anna.`    
     },
     {
@@ -20,7 +20,7 @@ const myQuestion = [{
             {text: 'Horse', correct: false},
             {text: 'Giraffe', correct: true}
         ], 
-        image: document.getElementsByClassName('giraffe'), 
+        image: '', 
         explain: `From Sarah's room to the movie theater called Giraffe Park, giraffes are all over the first game in the series. All of this leads up to the beautiful scene where Ellie meets one for the first time.`
     },
     {
@@ -31,7 +31,7 @@ const myQuestion = [{
             {text: 'Dinosaurs book', correct: false},
             {text: 'Toy robot', correct: true}
         ],
-        image: document.getElementsByClassName('toy'),
+        image: '',
         explain: `Ellie takes the toy robot from a toy shop when Sam was told to get rid of that by his brother Henry. Ellie keeps the toy robot when Henry's back was turned. She still keeps that and it can be seen in Ellie's room at the start of the second game.`
     },
     {
@@ -42,7 +42,7 @@ const myQuestion = [{
             {text: 'Nuclear waste symbol', correct: false}, 
             {text: 'One-eyed monster plushie', correct: false}
         ], 
-        image: document.getElementsByClassName('sticker'), 
+        image: '', 
         explain: `Ellie has various buttons on her backpack, but Giraffe sticker is not one of them.`
     }, 
     {
@@ -53,7 +53,7 @@ const myQuestion = [{
             {text: 'Argentina', correct: true},
             {text: 'Netherland', correct: false}
         ],
-        image: document.getElementsByClassName('argentina'), 
+        image: '', 
         explain: `Sarah is wearing an Argentina football shirt, which is a nod to the game's composer Gustavo Santaolalla who is from Argentina.`
     }
 ];
@@ -68,6 +68,7 @@ const answerButtonsElement = document.getElementById('answer-buttons');
 
 const imageEl = document.getElementById('answer-image');
 const explantionEl = document.getElementById('explanation');
+const answerImage = document.getElementById('answer-image');
 
 let shuffledQuestion, currentQuestionIndex
 
@@ -102,6 +103,8 @@ function nextGame() {
     if (currentQuestionIndex !== 0) { // Only remove the hidden class if it's not the first question
         explantionEl.classList.remove('hidden');
     }
+    answerImage.classList.add('hidden');
+    answerImage.classList.add('');
 }
 
 function showQuestion(myQuestion) {
@@ -130,11 +133,14 @@ function resetState() {
         answerButtonsElement.removeChild(answerButtonsElement.firstChild);
     }
     answerButtonsElement.classList.remove('clicked');
+    
 }
 
 function selectAnswer(e) {
     const selectedButton = e.target;
     const correct = selectedButton.dataset.correct;
+
+    answerImage.classList.remove('hidden');
 
     // check if the button has already been clicked
     if (answerButtonsElement.classList.contains('clicked')) {
@@ -142,11 +148,24 @@ function selectAnswer(e) {
     }    
     // add the clicked class to the button
     answerButtonsElement.classList.add('clicked');
-   
+    
     setStatusClass(document.body, correct);
     Array.from(answerButtonsElement.children).forEach(button => {
         setStatusClass(button, button.dataset.correct);
-    })
+    });
+
+    if (questionElement.innerText === `What is the name of Ellie's mother?`) {
+        answerImage.classList.add('anna');
+    } else if (questionElement.innerText === 'What animal constantly pops up in the background throughout the first game?') {
+        answerImage.classList.add('giraffe');
+    } else if (questionElement.innerText === 'What item does Ellie keep of Sam\'s that can be seen in her room at the start of The Last of Us Part II?') {
+        answerImage.classList.add('toy');
+    } else if (questionElement.innerText === 'Which of these buttons is NOT on Ellie\'s original backpack?') {
+        answerImage.classList.add('sticker');
+    } else if (questionElement.innerText === 'In the photograph of Joel and his daughter Sarah, what football shirt is she wearing?') {
+        answerImage.classList.add('argentina');
+    };
+
     if (shuffledQuestion.length > currentQuestionIndex +1) {
         nextButton.classList.remove('hidden');
     } else {

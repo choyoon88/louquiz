@@ -12,6 +12,14 @@
     
 }
 
+#answer-image {
+    background-size: cover;
+    overflow: hidden;
+    position: absolute;
+    width: 100%;
+    height: 500px;
+}
+
 .anna {
     background: url(../images/anna.png);
 }
