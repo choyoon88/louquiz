@@ -4,7 +4,7 @@
 const myQuestion = [{
         question: `What is the name of Ellie's mother?`,
         answers: [
-            { text: 'Sarah', correct: false },
+            { text: 'Jane', correct: false },
             { text: 'Anna', correct: true },
             { text: 'Michela', correct: false },
             { text: 'Mia', correct: false}
@@ -104,7 +104,7 @@ function nextGame() {
         explantionEl.classList.remove('hidden');
     }
     answerImage.classList.add('hidden');
-    answerImage.classList.add('');
+    answerImage.classList.remove();
 }
 
 function showQuestion(myQuestion) {
@@ -133,7 +133,7 @@ function resetState() {
         answerButtonsElement.removeChild(answerButtonsElement.firstChild);
     }
     answerButtonsElement.classList.remove('clicked');
-    
+    answerImage.classList.remove('anna', 'giraffe', 'toy', 'sticker', 'argentina');
 }
 
 function selectAnswer(e) {
