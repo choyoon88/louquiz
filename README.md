@@ -1,6 +1,6 @@
-# BeatFit
+# The Last of Us Quiz Challenge
 
-BeatFit is a site for people who wish to challenge more of their exercise goal by comparing their results with other peers. BeatFit is beneficial not only to the experienced person in workout but to whom wish to start their own exercise. By comparing your exercise goal with others gives you the motivation to keep on doing better than you can and by this workout beginners will easily make it as a habit. For those workout buffs could set a higher goal for making a better and healthy body.
+The Last of Us Quiz Challenge is a small quiz website designed for those gamers who love the game The Last of Us Part 1 and Part 2. There are total 5 questions with 4 answer options. 
 
 
 ## Features
