@@ -44,6 +44,10 @@
     visibility: hidden !important;
 }
 
+.bold {
+    border: 4px inset #5f5fe7;
+}
+
 .head {
     text-align: center;
 }

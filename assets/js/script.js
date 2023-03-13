@@ -148,7 +148,8 @@ function selectAnswer(e) {
     }    
     // add the clicked class to the button
     answerButtonsElement.classList.add('clicked');
-    
+    selectedButton.classList.add('bold');
+
     setStatusClass(document.body, correct);
     Array.from(answerButtonsElement.children).forEach(button => {
         setStatusClass(button, button.dataset.correct);
