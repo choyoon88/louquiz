@@ -167,6 +167,23 @@ p {
 } 
 
 /* Small devices (portrait tablets and large phones, 600px and up) */ 
+@media screen and (max-width: 400px) {
+    #control-score {
+        right: 0;
+        top: 95%;
+    }
+
+    #question-container {
+        display: block;
+        position: absolute;
+        top: 51%;
+    }
+
+    .image {
+        top: 130%;
+    }
+}
+
 @media only screen and (min-width: 600px) {
     .image {
         top: 77%;
