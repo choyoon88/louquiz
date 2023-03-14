@@ -170,7 +170,7 @@ p {
 @media screen and (max-width: 400px) {
     #control-score {
         right: 0;
-        top: 95%;
+        top: 80%;
     }
 
     #question-container {
@@ -180,7 +180,24 @@ p {
     }
 
     .image {
-        top: 130%;
+        top: 100%;
+        height: 23%;
+    }
+
+    #explanation {
+        font-size: 1rem;
+    }
+
+    .font, button {
+        font-size: 1.2rem;
+    }
+
+    #start-btn, #next-btn {
+        font-size: 1.5em;
+    }
+
+    p {
+        font-size: 1em;
     }
 }
 
