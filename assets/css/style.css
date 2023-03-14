@@ -119,9 +119,9 @@ p {
 #explanation {
     position: absolute;
     bottom: -2rem;
-    color: rgba(241, 240, 234, 0.879);
+    color: rgba(246, 246, 243, 0.879);
     padding: 26px;
-    text-shadow: 1px 1px black;
+    text-shadow: 1px 1px rgb(180, 65, 33);
 }
 
 #lou {

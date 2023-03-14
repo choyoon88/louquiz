@@ -1,7 +1,7 @@
 /**
  * My question and answer list
  */
-const myQuestion = [{
+const myQuestions = [{
         question: `What is the name of Ellie's mother?`,
         answers: [
             { text: 'Jane', correct: false },
@@ -51,7 +51,7 @@ const myQuestion = [{
             {text: 'England', correct: false}, 
             {text: 'Brazil', correct: false},
             {text: 'Argentina', correct: true},
-            {text: 'Netherland', correct: false}
+            {text: 'The Netherlands', correct: false}
         ],
         image: '', 
         explain: `Sarah is wearing an Argentina football shirt, which is a nod to the game's composer Gustavo Santaolalla who is from Argentina.`
@@ -90,7 +90,7 @@ function startGame() {
     document.getElementById('correct-num').innerText = '0';
     document.getElementById('incorrect-num').innerText = '0';
     startButton.classList.add('hidden');
-    shuffledQuestion = myQuestion.sort(() => Math.random() - .5);
+    shuffledQuestion = myQuestions.sort(() => Math.random() - .5);
     currentQuestionIndex = 0;
     questionContainerElement.classList.remove('hidden');
     nextGame()
@@ -107,9 +107,9 @@ function nextGame() {
     answerImage.classList.remove();
 }
 
-function showQuestion(myQuestion) {
-    questionElement.innerText = myQuestion.question;
-    myQuestion.answers.forEach(answer => {
+function showQuestion(myQuestions) {
+    questionElement.innerText = myQuestions.question;
+    myQuestions.answers.forEach(answer => {
         const button = document.createElement('button');
         button.innerText = answer.text;
         button.classList.add('btn');
