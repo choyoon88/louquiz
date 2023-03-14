@@ -1,5 +1,5 @@
 /**
- * My question and answer list
+ * My questions and answers list
  */
 const myQuestions = [{
         question: `What is the name of Ellie's mother?`,
@@ -82,7 +82,7 @@ nextButton.addEventListener('click', () => {
 
 /**
  * Hide the start button once clicking the start.
- * Display questions randomly.
+ * Display questions randomly by sorting it with random numbers between -0.5 and 0.5.
  * Remove hidden for the question container so the question and the answer options
  * to show up.
  */
@@ -96,6 +96,13 @@ function startGame() {
     nextGame()
 }
 
+
+/**
+ * Function resetState once clicking the next button.
+ * Show the question from the shuffled question.
+ * Hide the explanation.
+ * hide the answer image from the previous question.
+ */
 function nextGame() {
     resetState();
     showQuestion(shuffledQuestion[currentQuestionIndex]);
@@ -107,6 +114,13 @@ function nextGame() {
     answerImage.classList.remove();
 }
 
+/**
+ * Show the question from myQuestions array. 
+ * For each answer, create a button to have the text from the answer in the myQuestion array. 
+ * Those newly created button should have the btn class added for styling.
+ * Check the answer.correct property and if the answer is correct, set dataset.correct to true.
+ * Call the selectAnswer function once the button is clicked.
+ */
 function showQuestion(myQuestions) {
     questionElement.innerText = myQuestions.question;
     myQuestions.answers.forEach(answer => {
@@ -126,6 +140,8 @@ function showQuestion(myQuestions) {
  * Remove all the answer option's first child node 
  * until there is no more child node to remove
  * so that we can set up a new answer options.
+ * Remove class clicked from the answer button.
+ * Remove classes related with showing answer image from the answerImage.
  */
 function resetState() {
     nextButton.classList.add('hidden');
@@ -136,6 +152,29 @@ function resetState() {
     answerImage.classList.remove('anna', 'giraffe', 'toy', 'sticker', 'argentina');
 }
 
+/**
+ * Show the answer image by removing class hidden.
+ * Check if the button has already been clicked and if it is, 
+ * then return and does not execute further code. This is to prevent clicking multiple times.
+ * 
+ * Add 'clicked' class to the selected answer button.
+ * Add class bold to the selected button for button styling.
+ * Function setStatusClass and see if the body is set to correct.
+ * Convert the answers as an array and check if each button has dataset correct. 
+ * 
+ * For the correct answer image, match the answer images to each question,
+ * and once the user clicks any answer from that question, the answer image will show up.
+ * 
+ * If we have more question to show, then show the next button.
+ * If not (shuffle question index == current question index +1), 
+ * have the start button to change the text to restart, 
+ * and make the start button show up.
+ * 
+ * Show the explanation of the currentquestionindex's explain text.
+ * 
+ * Increment correct score when the correct is true,
+ * else, increment the wrong score. 
+ */
 function selectAnswer(e) {
     const selectedButton = e.target;
     const correct = selectedButton.dataset.correct;
@@ -182,6 +221,11 @@ function selectAnswer(e) {
     }
 }
 
+/**
+ * By passing through the function clearStatusClass,
+ * check if it is correct then add class correct,
+ * or not, add class wrong.
+ */
 function setStatusClass(element, correct) {
     clearStatusClass(element);
     if (correct) {
@@ -191,19 +235,25 @@ function setStatusClass(element, correct) {
     }
 }
 
+/**
+ * Function for clearing the element correct and wrong
+ */
 function clearStatusClass(element) {
     element.classList.remove('correct');
     element.classList.remove('wrong');
 }
-
+/**
+ * Increment score by +1 when correct answer was selected
+ */
 function incrementScore() {
     let oldScore = parseInt(document.getElementById('correct-num').innerText);
     document.getElementById('correct-num').innerText = ++oldScore;
-    //increment score by +1 when correct answer was selected
 }
 
+/**
+ * Increment score by +1 when incorrect answer was selected
+ */
 function incrementWrongScore() {
     let oldScore = parseInt(document.getElementById('incorrect-num').innerText);
     document.getElementById('incorrect-num').innerText = ++oldScore;
-    //increment score by +1 when incorrect answer was selected
 }
