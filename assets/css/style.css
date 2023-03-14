@@ -138,7 +138,7 @@ p {
         left: 0;
         top: 90%;
         width: 100%;
-        height: 32%;
+        height: 43%;
     }
 
     #answer-image {
@@ -162,6 +162,18 @@ p {
     #explanation {
         font-size: 1.4rem;
     }
+
+    .font, button {
+        font-size: 1.2rem;
+    }
+
+    #start-btn, #next-btn {
+        font-size: 1.5em;
+    }
+
+    p {
+        font-size: 1em;
+    }
     
 
 } 
@@ -181,7 +193,7 @@ p {
 
     .image {
         top: 100%;
-        height: 23%;
+        height: 31%;
     }
 
     #explanation {
@@ -206,7 +218,7 @@ p {
         top: 77%;
         width: 100%;
         left: 0;
-        height: 27%;
+        height: 52%;
     }
 
     #control-score {
@@ -221,6 +233,18 @@ p {
     #question-container {
         top: 47%;
     }
+
+    /* .font, button {
+        font-size: 1.2rem;
+    }
+
+    #start-btn, #next-btn {
+        font-size: 1.5em;
+    }
+
+    p {
+        font-size: 1em;
+    } */
 } 
 
 /* Medium devices (landscape tablets, 768px and up) */ 
