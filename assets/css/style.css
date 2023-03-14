@@ -133,48 +133,7 @@ p {
 /* media query */
 
 /* Extra small devices (phones, 600px and down) */ 
-@media only screen and (max-width: 600px) {
-    .image {
-        left: 0;
-        top: 64%;
-        width: 100%;
-        height: 39%;
-    }
-
-    #answer-image {
-        
-        width: 100%;
-        height: 100%;
-    }
-
-    #question-container {
-        display: block;
-        position: absolute;
-        top: 25%;
-    }
-
-    #control-score {
-        /* right: 0; */
-        top: 41%;
-
-    }
-
-    #explanation {
-        font-size: 1.4rem;
-    }
-
-    .font, button {
-        font-size: 1.2rem;
-    }
-
-    #start-btn, #next-btn {
-        font-size: 1.5em;
-    }
-
-    p {
-        font-size: 1.5em;
-    }
-
+@media screen and (max-width: 300px) {
     h1 {
         font-size: 3em;
     }
@@ -183,11 +142,45 @@ p {
         font-size: 2em;
     }
     
+    p {
+        font-size: 1em;
+    }
 
-} 
+    #start-btn, #next-btn {
+        font-size: 1em;
+    }
 
-/* Small devices */ 
-@media screen and (max-width: 400px) {
+    .font, button {
+        font-size: 1rem;
+    }
+    .image {
+        height: 25%;
+        width: 100%;
+        top: 60%;
+        right: 0;
+    }
+
+    #answer-image {
+        width: 100%;
+        height: 100%;
+    }
+
+    #control-score {
+        top: 45%;
+        right: 0;
+    }
+
+    #question-container {
+        position: relative;
+    }
+
+    .btn {
+        margin: 1px;
+    }
+}
+
+
+@media screen and (max-width: 600px) and (min-width: 400px) {
     #control-score {
         right: 0;
         top: 34%;
@@ -200,7 +193,7 @@ p {
     }
 
     .image {
-        top: 50%;
+        top: 55%;
         height: 22%;
     }
 
@@ -229,28 +222,35 @@ p {
     }
 }
 
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 768px) and (min-width: 600px) {
     .image {
-        top: 77%;
-        width: 100%;
         left: 0;
-        height: 52%;
-    }
-
-    #control-score {
-        top: 47%;
+        top: 64%;
+        width: 100%;
+        height: 39%;
     }
 
     #answer-image {
+        
         width: 100%;
         height: 100%;
     }
 
     #question-container {
-        top: 47%;
+        display: block;
+        position: absolute;
+        top: 25%;
     }
 
-    /* .font, button {
+    #control-score {
+        top: 41%;
+    }
+
+    #explanation {
+        font-size: 1.4rem;
+    }
+
+    .font, button {
         font-size: 1.2rem;
     }
 
@@ -259,55 +259,21 @@ p {
     }
 
     p {
-        font-size: 1em;
-    } */
-} 
+        font-size: 1.5em;
+    }
 
-/* Medium devices (landscape tablets, 768px and up) */ 
-@media only screen and (min-width: 768px) {
-    .image {
-        height: 56%;
+    h1 {
+        font-size: 3em;
+    }
+    
+    h2 {
+        font-size: 2em;
     }
 } 
 
-@media only screen and (max-width: 840px) {
-    .image {
-        height: 46%;
-    }
-}
-
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 992px) and (min-width: 900px) {
     .image {
         height: 50%;
     }
 }
 
-/* Large devices (laptops/desktops, 992px and up) */ 
-@media only screen and (min-width: 992px) {
-    .image {
-        width: 100%;
-        height: 72%;
-        left: 8px;
-    }
-} 
-
-/* Extra large devices (large laptops and desktops, 1200px and up) */ 
-@media only screen and (min-width: 1200px) {
-    .image {
-        top: 50%;
-        width: 68%;
-        height: 61%;
-        left: 32%;
-    }
-
-    #control-score {
-        position: absolute;
-        right: 70%;
-    }
-}
-
-@media only screen and (min-width: 1250px) {
-    .image {
-        height: 69%;
-    }
-}
