@@ -182,7 +182,7 @@ p {
 @media screen and (max-width: 400px) {
     #control-score {
         right: 0;
-        top: 80%;
+        top: 78%;
     }
 
     #question-container {
