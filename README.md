@@ -7,12 +7,11 @@ The Last of Us Quiz Challenge is a small quiz website designed for those gamers 
 
 ### Existing Features
 
-- __Navigation Bar__
+- __Title__
 
-  - Featured on all four pages. Navigation bar links to the Home, Timetable, Gallery and Join. Logo on the very left side leads to the home page. 
-  - This section will allow the user to easily navigate from page to page across all devices without having to revert back to the previous page via the ‘back’ button. 
+  -  
 
-  ![Nav Bar](readme-image/navbar.png)
+  ![Title](readme-images/title.png)
 
 - __Main Background Image__
 
