@@ -7,56 +7,57 @@ The Last of Us Quiz Challenge is a small quiz website designed for those gamers 
 
 ### Existing Features
 
-- __Title__
+- __Main Front Page__
 
-  -  
+  - There is only one page for this quiz website. The main front page is what the user will first see once directed to the website. 
+  - There is the *title* on the top center of the page, a *start button* to commence quiz, *scoreboard* and a *default image* of the game's protagonist Ellie and Joel to greet the user.
 
-  ![Title](readme-images/title.png)
+  ![Front Page](readme-images/frontpage.png)
 
-- __Main Background Image__
+- __Start Button__
 
-  - The main background image consists of three different workout related images rotating by slowly overlapping the previous one, and will stand as a default background image across all pages. 
+  - Start button is for starting the quiz. 
+  - Start button will be hidden once the user clicks it, and will trigger the question and the answer options to show up. 
 
-  ![Main Background Image](readme-image/homepage.png)
+  ![Start Btn](readme-images/start.png)
 
-- __Why Join BeatFit Section__
+- __Next Button__
 
-  - Why Join BeatFit has two sections; brief reasoning for why working out together is good, and why choose BeatFit for that reason. 
-  - Users will seek why it could be benificial to workout together and this will make the users get interested in joining BeatFit. 
+  - Next button is hidden by default but will show up once the user selects the answer.
+  - Next button is also designed to be hidden when the user clicks the Next button. 
 
-  ![Why Join BeatFit](readme-image/homepage-about.png)
+  ![Next btn](readme-images/next.png)
 
-- __TimeTable__
+- __Restart Button__
 
-  - This section will allow the user to see the full weekly based schedules for every day and see which day will meet their workout plan. 
+  - Restart button will only show once the user finishes the last question. 
+  - By clicking Restart button, the user can replay the game. 
+  - Restart functions the same as the Start button.
+
+  ![Restart btn](readme-images/restart.png)
+
+- __Score Board__
+
+  - Score board is for showing how many question the user got correct or wrong. 
+  - Each *Correct Answer* and *Incorrect Answer* is set to 0 by default and it will be incremented by 1 when the user gets either the correct answer or the incorrect answer.
   
-  ![Timetable](readme-image/timetable.png)
+  ![Score Board](readme-images/scoreboard.png)
 
-- __Gallery__
+- __Question Area__
 
-  - Gallery will provide the users with supporting images to see how the gym and the whole workout scene would look like. 
+  - Once clicking start button from the initial page, the question area that contains the question and the answer options will show up.
+  - When the user chooses an answer, the blue boarder will be drawn on the selected answer button to indicate the users selection. 
+  - Also the answer text colour will change according to the correct answer being true (green) or false (red). 
 
-  ![Gallery](readme-image/gallery.png)
+  ![Questionarea](readme-images/questionarea.png)
+  ![Questionarea-clicked](readme-images/questionarea-click.png)
 
-- __Join Page__
+- __Answer Explanation and Image__
 
-  - This page will allow the user to get signed up to BeatFit to start their workout journey by comparing with others. The user will be asked to fill in their first name, last name and email address as a mandatory field. Users could choose which days will fit their schedule during the week.
+  - Once the user choose an answer, the explanation for the correct answer will show up underneath the question area. 
+  - Also a supporting image from the game play screenshot will be displayed to give detailed understanding of the answer.
 
-  ![Join](readme-image/join.png)
-
-- __Thanks for Joining page__
-
-  - This page will show up once the users sign up for joining BeatFit. 
-  - The user will be notified that there will expect an email sent to the email address they entered for joining. The function for this will be added later. 
-
-  ![Join](readme-image/afterjoina.png)
-
-- __The Footer__ 
-
-  - The footer section includes links to the relevant social media sites for BeatFit. The links will open to a new tab to allow easy navigation for the user. 
-  - The footer is valuable to the user as it encourages them to keep connected via social media.
-
-  ![Footer](readme-image/footer.png)
+  ![Answer Explanation](readme-images/fullview%20from%20bigger%20screen.png)
 
 ## Testing 
 
@@ -132,7 +133,7 @@ The Last of Us Quiz Challenge is a small quiz website designed for those gamers 
   - From the Build and deployment section, selected the branch to have Main and /root, then hit save. 
   - Once the saved, the page will be automatically be refreshed and on top of the Github Pages section, the deployed page could be found after 'Your site is live at.'
 
-The live link can be found here - https://choyoon88.github.io/beatfit/
+The live link can be found here - https://choyoon88.github.io/louquiz/
 
 ## Local Deployment
 
@@ -151,6 +152,7 @@ The live link can be found here - https://choyoon88.github.io/beatfit/
 
 Useful links for validation and help:
 
+- https://codeinstitute.net/ JavaScript main study done by Code Institute. 
 - https://www.youtube.com/watch?v=riDzcEQbX6k
 Basic JavaScript Structure for building the question functions.
 - https://www.w3schools.com/
