@@ -3,12 +3,12 @@
     background-size: cover;
     overflow: hidden;
     position: absolute;
-    top: 80%;
+    top: 64%;
     right: 5%;
     /* margin-left: auto;
     margin-right: auto; */
     width: 76%;
-    height: 67%;
+    height: 500px;
     
 }
 
@@ -61,7 +61,7 @@
     padding: 0;
     margin: 13px;
     width: 100vw;
-    height: 20vh;   
+    height: 10vh;   
     justify-content: center;
     align-items: center;
 }
@@ -75,7 +75,7 @@ h1, h2, p, .font, button {
 }
 
 .font, button {
-    font-size: 2rem;
+    font-size: 1.5rem;
 }
 
 .btn {
@@ -92,13 +92,13 @@ button.wrong {
 }
 
 #start-btn, #next-btn {
-    font-size: 3em;
+    font-size: 2em;
 }
 
 #control-score {
     position: absolute;
     right: 12%;
-    top: 52%;
+    top: 40%;
 }
 
 #score {
@@ -106,15 +106,15 @@ button.wrong {
 }
 
 h1 {
-    font-size: 4em;
+    font-size: 3.5em;
 }
 
 h2 {
-    font-size: 3em;
+    font-size: 2.5em;
 }
 
 p {
-    font-size: 2em;
+    font-size: 1.5em;
 }
 
 #explain-box {
@@ -140,7 +140,7 @@ p {
 }
 
 /* media query */
-@media screen and (min-width: 200px) and (max-width: 280px) {
+@media screen and (min-width: 200px) and (max-width: 299px) {
     h1 {
         font-size: 3em;
     }
@@ -369,10 +369,31 @@ p {
 } 
 
 @media only screen and (max-width: 992px) and (min-width: 769px) {
+    h1 {
+        font-size: 3.5em;
+    }
+    
+    h2 {
+        font-size: 2.5em;
+    }
+    
+    p {
+        font-size: 1.5em;
+    }
+
+    #start-btn, #next-btn {
+        font-size: 1.5em;
+    }
+
+    .font, button {
+        font-size: 1.5rem;
+    }
+    
     .image {
-        width: 87%;
-        height: 30%;
-        top: 65%;
+        height: 70%;
+        width: 100%;
+        top: 72%;
+        right: 0;
     }
 
     #answer-image {
@@ -381,7 +402,7 @@ p {
     }
 
     #control-score {
-        top: 45%;
+        top: 48%;
         right: 10%;
     }
 
@@ -396,7 +417,7 @@ p {
     #explain-box {
         display: flex;
         position: absolute;
-        right: 0;
+        right: 20%;
         margin: 1px;
     }
 }
