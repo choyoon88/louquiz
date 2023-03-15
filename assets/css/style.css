@@ -368,9 +368,36 @@ p {
     }
 } 
 
-@media only screen and (max-width: 992px) and (min-width: 900px) {
+@media only screen and (max-width: 992px) and (min-width: 769px) {
     .image {
-        height: 50%;
+        width: 87%;
+        height: 30%;
+        top: 65%;
+    }
+
+    #answer-image {
+        width: 100%;
+        height: 100%;
+    }
+
+    #control-score {
+        top: 45%;
+        right: 10%;
+    }
+
+    #question-container {
+        position: relative;
+    }
+
+    .btn {
+        margin: 1px;
+    }
+
+    #explain-box {
+        display: flex;
+        position: absolute;
+        right: 0;
+        margin: 1px;
     }
 }
 
