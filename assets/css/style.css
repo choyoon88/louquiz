@@ -3,12 +3,12 @@
     background-size: cover;
     overflow: hidden;
     position: absolute;
-    top: 40%;
+    top: 80%;
     right: 5%;
     /* margin-left: auto;
     margin-right: auto; */
-    width: 50%;
-    height: 500px;
+    width: 76%;
+    height: 67%;
     
 }
 
@@ -17,7 +17,7 @@
     overflow: hidden;
     position: absolute;
     width: 100%;
-    height: 500px;
+    height: 100%;
 }
 
 .anna {
@@ -59,9 +59,9 @@
 .container {
     display: flex;
     padding: 0;
-    margin: 0;
+    margin: 13px;
     width: 100vw;
-    height: 10vh;   
+    height: 20vh;   
     justify-content: center;
     align-items: center;
 }
@@ -80,7 +80,7 @@ h1, h2, p, .font, button {
 
 .btn {
     font: 1em;
-    margin: 10px;
+    margin: 2px;
 }
 
 button.correct {
@@ -97,7 +97,8 @@ button.wrong {
 
 #control-score {
     position: absolute;
-    right: 65%;
+    right: 12%;
+    top: 52%;
 }
 
 #score {
@@ -116,23 +117,29 @@ p {
     font-size: 2em;
 }
 
-#explanation {
+#explain-box {
+    display: flex;
     position: absolute;
+    right: 40%;
+    margin: 30px;
+}
+
+#explanation {
+    /* position: absolute; */
     bottom: -2rem;
-    color: rgba(246, 246, 243, 0.879);
-    padding: 26px;
-    text-shadow: 1px 1px rgb(180, 65, 33);
+    color: black;
+    /* padding: 26px; */
+    text-shadow: 1px 1px rgb(231, 230, 230);
 }
 
 #lou {
-    color: rgb(244, 216, 59);
+    color: rgb(215, 185, 10);
+    text-shadow: 1px 1px rgb(7, 0, 0);
     text-transform: uppercase;
     font-size: 1.2em;
 }
 
 /* media query */
-
-/* Extra small devices (phones, 600px and down) */ 
 @media screen and (max-width: 300px) {
     h1 {
         font-size: 3em;
@@ -154,7 +161,61 @@ p {
         font-size: 1rem;
     }
     .image {
-        height: 25%;
+        height: 20%;
+        width: 100%;
+        top: 68%;
+        right: 0;
+    }
+
+    #answer-image {
+        width: 100%;
+        height: 100%;
+    }
+
+    #control-score {
+        top: 45%;
+        right: 0;
+    }
+
+    #question-container {
+        position: relative;
+    }
+
+    .btn {
+        margin: 1px;
+    }
+
+    #explain-box {
+        display: flex;
+        position: absolute;
+        right: 40%;
+        margin: 2px;
+    }
+}
+
+
+@media screen and (max-width: 600px) and (min-width: 300px) {
+    h1 {
+        font-size: 3em;
+    }
+    
+    h2 {
+        font-size: 2em;
+    }
+    
+    p {
+        font-size: 1em;
+    }
+
+    #start-btn, #next-btn {
+        font-size: 1em;
+    }
+
+    .font, button {
+        font-size: 1rem;
+    }
+    .image {
+        height: 31%;
         width: 100%;
         top: 60%;
         right: 0;
@@ -177,97 +238,65 @@ p {
     .btn {
         margin: 1px;
     }
-}
 
-
-@media screen and (max-width: 600px) and (min-width: 400px) {
-    #control-score {
-        right: 0;
-        top: 34%;
-    }
-
-    #question-container {
-        display: block;
-        position: relative;
-        top: 51%;
-    }
-
-    .image {
-        top: 55%;
-        height: 22%;
-    }
-
-    #explanation {
-        font-size: 1rem;
-    }
-
-    .font, button {
-        font-size: 1.2rem;
-    }
-
-    #start-btn, #next-btn {
-        font-size: 1.5em;
-    }
-
-    p {
-        font-size: 1em;
-    }
-
-    h1 {
-        font-size: 2em;
-    }
-    
-    h2 {
-        font-size: 1.5em;
-    }
-}
-
-@media only screen and (min-width: 768px) and (min-width: 600px) {
-    .image {
-        left: 0;
-        top: 64%;
-        width: 100%;
-        height: 39%;
-    }
-
-    #answer-image {
-        
-        width: 100%;
-        height: 100%;
-    }
-
-    #question-container {
-        display: block;
+    #explain-box {
+        display: flex;
         position: absolute;
-        top: 25%;
+        right: 40%;
+        margin: 1px;
     }
+}
 
-    #control-score {
-        top: 41%;
-    }
-
-    #explanation {
-        font-size: 1.4rem;
-    }
-
-    .font, button {
-        font-size: 1.2rem;
-    }
-
-    #start-btn, #next-btn {
-        font-size: 1.5em;
-    }
-
-    p {
-        font-size: 1.5em;
-    }
-
+@media only screen and (max-width: 768px) and (min-width: 600px) {
     h1 {
         font-size: 3em;
     }
     
     h2 {
         font-size: 2em;
+    }
+    
+    p {
+        font-size: 1em;
+    }
+
+    #start-btn, #next-btn {
+        font-size: 1em;
+    }
+
+    .font, button {
+        font-size: 1rem;
+    }
+    .image {
+        height: 49%;
+        width: 100%;
+        top: 60%;
+        right: 0;
+    }
+
+    #answer-image {
+        width: 100%;
+        height: 100%;
+    }
+
+    #control-score {
+        top: 45%;
+        right: 10%;
+    }
+
+    #question-container {
+        position: relative;
+    }
+
+    .btn {
+        margin: 1px;
+    }
+
+    #explain-box {
+        display: flex;
+        position: absolute;
+        right: 40%;
+        margin: 1px;
     }
 } 
 
