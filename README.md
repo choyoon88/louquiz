@@ -12,7 +12,7 @@ The Last of Us Quiz Challenge is a small quiz website designed for those gamers 
   - There is only one page for this quiz website. The main front page is what the user will first see once directed to the website. 
   - There is the *title* on the top center of the page, a *start button* to commence quiz, *scoreboard* and a *default image* of the game's protagonist Ellie and Joel to greet the user.
 
-  ![Front Page](readme-images/frontpage.png)
+  ![Front Page](readme-images/front-page.png)
 
 - __Start Button__
 
@@ -23,7 +23,7 @@ The Last of Us Quiz Challenge is a small quiz website designed for those gamers 
 
 - __Next Button__
 
-  - Next button is hidden by default but will show up once the user selects the answer.
+  - Next button is hidden by default but will show up once the user selects an answer.
   - Next button is also designed to be hidden when the user clicks the Next button. 
 
   ![Next btn](readme-images/next.png)
@@ -46,18 +46,18 @@ The Last of Us Quiz Challenge is a small quiz website designed for those gamers 
 - __Question Area__
 
   - Once clicking start button from the initial page, the question area that contains the question and the answer options will show up.
-  - When the user chooses an answer, the blue boarder will be drawn on the selected answer button to indicate the users selection. 
+  - When the user chooses an answer, an electric blue coloured boarder will be drawn on the selected answer button to indicate the users selection. 
   - Also the answer text colour will change according to the correct answer being true (green) or false (red). 
 
   ![Questionarea](readme-images/questionarea.png)
-  ![Questionarea-clicked](readme-images/questionarea-click.png)
+  ![Questionarea-clicked](readme-images/answerclick.png)
 
 - __Answer Explanation and Image__
 
   - Once the user choose an answer, the explanation for the correct answer will show up underneath the question area. 
   - Also a supporting image from the game play screenshot will be displayed to give detailed understanding of the answer.
 
-  ![Answer Explanation](readme-images/fullview%20from%20bigger%20screen.png)
+  ![Answer Explanation](readme-images/explainscreen.png)
 
 ## Testing 
 
@@ -142,6 +142,7 @@ Searched for assistance and tips.
 Taken game questions.
 - https://chat.openai.com/
 Chat GPT was most helpful when asking questions of the function of my codes. Also I got assistance of how to create additional functions. (e.g. How to prevent the user from adding more than 1 to the score when clicking the answer multiple times, How to reset increment scores when clicking restart etc.)
+- https://www.steamgriddb.com/icon/2579 Favicon was downloaded from here. 
 
 ### Content 
 

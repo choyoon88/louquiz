@@ -45,7 +45,7 @@
 }
 
 .bold {
-    border: 4px inset #5f5fe7;
+    border: 4px inset #87F5FB;
 }
 
 .head {
@@ -133,7 +133,7 @@ p {
 }
 
 #lou {
-    color: rgb(35, 35, 35);
+    color: rgb(219, 13, 13);
     text-shadow: 1px 1px rgb(238, 230, 19);
     text-transform: uppercase;
     font-size: 1.3em;
