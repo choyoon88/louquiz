@@ -64,48 +64,29 @@ The Last of Us Quiz Challenge is a small quiz website designed for those gamers 
 ### Validator Testing 
 
 #### __HTML__
-  - On all html pages, two issues were found during the check over [W3C Validator check](https://validator.w3.org/#validate_by_input)
+  - Two issues were found during the check over [W3C Validator check](https://validator.w3.org/#validate_by_input)
 
-    - Warning: Section lacks heading. Consider using h2-h6 elements to add identifying headings to all sections, or else use a div element instead for any cases where no heading is needed. From line 31, column 5; to line 31, column 28
-      > Changed section to div and solved the issue.
+    - Error: Element img is missing required attribute src.
+    From line 34, column 13; to line 34, column 50
 
-    - Error: Stray start tag footer. From line 59, column 1; to line 59, column 8
-      > Placed the footer inside the body and fixed the issue.
+          <img id="answer-image" class="hidden">↩     
 
-  - On gallery.html, one issue was found during the check over [W3C Validator check](https://validator.w3.org/#validate_by_input)
+      > Changed img to div and solved the issue. 
 
-    - Warning: Section lacks heading. Consider using h2-h6 elements to add identifying headings to all sections, or else use a div element instead for any cases where no heading is needed. From line 35, column 5; to line 35, column 26
-      > Changed section to div and solved the issue.
+    - Error: An img element must have an alt attribute, except under certain conditions. For details, consult guidance on providing text alternatives for images.
+
+      From line 34, column 13; to line 34, column 50
+
+          <img id="answer-image" class="hidden">↩     
+      > Same issue as above. Changed img to div and solved the issue. 
 
 #### __CSS__
   - No errors or bugs were found when passing through the official [W3C Validator check](https://validator.w3.org/#validate_by_input)
 
+### Lighthouse 
+
 ### Unfixed Bugs
   - There is no unfixed bugs. 
-
-### Functional Testing
-  - Functional testing performed for every single actions that could be taken within the website. If the actual behavior is the same as the expected behavior, it will be marked with P for pass, or not F for fail. 
-
-| Action | Expected Behavior    | Actual Behavior    |
-| :---:   | :---: | :---: |
-| Enter the browser with the url link: https://choyoon88.github.io/beatfit/ | Enter the home page   | P   |
-| Click BEAT FIT | Direct to home page   | P   |
-| Click HOME | Direct to home page   | P   |
-| Click TIMETABLE | Direct to timetable page with a timetable displayed on the bottom of the page   | P   |
-| Click GALLERY | Direct to gallery with images displayed   | P   |
-| Click JOIN | Direct to joining page with joining form   | P   |
-| From JOIN, click Join the Team without typing anything | Popup message 'Please fill in this field' should show up on First Name text bar  | P   |
-| From JOIN, input only the First Name, and click Join the Team | Popup message 'Please fill in this field' should show up on Last Name text bar   | P   |
-| From JOIN, input only the Last Name, and click Join the Team | Popup message 'Please fill in this field' should show up on First Name text bar   | P   |
-| From JOIN, input only the Email, and click Join the Team | Popup message 'Please fill in this field' should show up on First Name text bar   | P   |
-| From JOIN, input only the First Name and Last Name, and click Join the Team | Popup message 'Please fill in this field' should show up on Email text bar   | P   |
-| From JOIN, input First Name, Last Name and the Email but with an incorrect email address format, and click Join the Team | Popup message "Please include @ in the email address. '*typed content*' is missing an @" should show up on Email Text bar  | P   |
-| From JOIN, input First Name, Last Name and the Email with correct email address format | Direct to a 'thanks for joining' page   | P   |
-| From JOIN, select any day/s from 'Which day do you prefer' and do not enter anything, and click Join the Team | Popup message 'Please fill in this field' should show up on First Name text bar   | P   |
-| From the Footer, click Instagram icon | Instagram website opens on a new tab   | P   |
-| From the Footer, click Twitter icon | Twitter website opens on a new tab   | P   |
-| From the Footer, click Youtube icon | Youtube website opens on a new tab   | P   |
-
 
 ### How It Works on Different Screen Size Device
   - This website is desiged to adapt on different screen size devices. 
@@ -166,5 +147,4 @@ Chat GPT was most helpful when asking questions of the function of my codes. Als
 
 - The icons in the footer were taken from [Font Awesome](https://fontawesome.com/)
 
-### Media
 
