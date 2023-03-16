@@ -4,7 +4,7 @@
     overflow: hidden;
     position: absolute;
     top: 54%;
-    right: 5%;
+    right: 25%;
     /* margin-left: auto;
     margin-right: auto; */
     width: 50%;
@@ -98,7 +98,7 @@ button.wrong {
 #control-score {
     position: absolute;
     right: 12%;
-    top: 32%;
+    top: 35%;
 }
 
 #score {
@@ -133,10 +133,10 @@ p {
 }
 
 #lou {
-    color: rgb(215, 185, 10);
-    text-shadow: 1px 1px rgb(7, 0, 0);
+    color: rgb(35, 35, 35);
+    text-shadow: 1px 1px rgb(238, 230, 19);
     text-transform: uppercase;
-    font-size: 1.2em;
+    font-size: 1.3em;
 }
 
 /* media query */
@@ -312,28 +312,28 @@ p {
 
 @media only screen and (max-width: 768px) and (min-width: 600px) {
     h1 {
-        font-size: 3em;
+        font-size: 4em;
     }
     
     h2 {
-        font-size: 2em;
+        font-size: 3em;
     }
     
     p {
-        font-size: 1em;
+        font-size: 1.5em;
     }
 
     #start-btn, #next-btn {
-        font-size: 1em;
+        font-size: 1.5em;
     }
 
     .font, button {
-        font-size: 1rem;
+        font-size: 1.5rem;
     }
     .image {
         height: 49%;
         width: 100%;
-        top: 60%;
+        top: 73%;
         right: 0;
     }
 
@@ -343,7 +343,7 @@ p {
     }
 
     #control-score {
-        top: 45%;
+        top: 48%;
         right: 10%;
     }
 
@@ -385,9 +385,9 @@ p {
     }
     
     .image {
-        height: 70%;
+        height: 38%;
         width: 100%;
-        top: 72%;
+        top: 53%;
         right: 0;
     }
 
@@ -397,7 +397,7 @@ p {
     }
 
     #control-score {
-        top: 48%;
+        top: 37%;
         right: 10%;
     }
 
@@ -417,3 +417,30 @@ p {
     }
 }
 
+@media only screen and (max-width: 1189px) and (min-width: 992px) {
+       
+    .image {
+        width: 62%;
+        top: 60%;
+    }
+
+    #control-score {
+        top: 37%;
+        right: 7%;
+    }
+
+    #question-container {
+        position: relative;
+    }
+
+    .btn {
+        margin: 1px;
+    }
+
+    #explain-box {
+        display: flex;
+        position: absolute;
+        right: 20%;
+        margin: 1px;
+    }
+}
