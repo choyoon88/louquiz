@@ -152,6 +152,12 @@ p {
         top: 65% !important;
         right: 1% !important;
     }
+
+    #question-container {
+        display: block;
+        width: 75%;
+        height: 75%;
+    }
 }
 
 @media screen and (max-height: 660px) {
@@ -162,6 +168,12 @@ p {
     #control-score {
         top: 52% !important;
         right: 1% !important;
+    }
+
+    #question-container {
+        display: block;
+        width: 75%;
+        height: 75%;
     }
 }
 
@@ -204,6 +216,9 @@ p {
 
     #question-container {
         position: relative;
+        display: block;
+        width: 75%;
+        height: 75%;
     }
 
     .btn {
@@ -267,6 +282,9 @@ p {
 
     #question-container {
         position: relative;
+        display: block;
+        width: 100%;
+        height: 75%;
     }
 
     .btn {
@@ -321,6 +339,9 @@ p {
 
     #question-container {
         position: relative;
+        display: block;
+        width: 100%;
+        height: 75%;
     }
 
     .btn {
@@ -374,6 +395,9 @@ p {
 
     #question-container {
         position: relative;
+        display: block;
+        width: 100%;
+        height: 75%;
     }
 
     .btn {
@@ -428,6 +452,9 @@ p {
 
     #question-container {
         position: relative;
+        display: block;
+        width: 100%;
+        height: 75%;
     }
 
     .btn {
@@ -456,6 +483,9 @@ p {
 
     #question-container {
         position: relative;
+        display: block;
+        width: 100%;
+        height: 75%;
     }
 
     .btn {
