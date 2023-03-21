@@ -1,6 +1,6 @@
 # The Last of Us Quiz Challenge
 
-The Last of Us Quiz Challenge is a small quiz website designed for those gamers who love the game The Last of Us Part 1 and Part 2. There are total 5 questions with 4 answer options. 
+The Last of Us Quiz Challenge is a small quiz website designed for those gamers who love the game The Last of Us Part 1 and Part 2. There are total 5 questions with 4 answer options. Gamers who love The Last of Us series can try out to test their knowledge of the game with this short quiz challenge.
 
 
 ## Features
@@ -135,6 +135,6 @@ Searched for assistance and tips for various codes.
 - [Quiz Question](https://twinfinite.net/2022/08/the-hardest-the-last-of-us-trivia-quiz-youll-ever-take/): 
 Took every quiz questions.
 - [Google Font](https://fonts.google.com/): Font was used from Google Font.
-- [Favicon source](https://www.steamgriddb.com/icon/2579): Favicon was downloaded from here. 
+- [Favicon Source](https://www.pngitem.com/middle/hiiJwT_the-last-of-us-wiki-last-of-us/): Favicon was downloaded from here. 
 
 
