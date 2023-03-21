@@ -68,6 +68,8 @@
 
 #question-container {
     display: block;
+    width: 50%;
+    height: 50%;
 }
 
 h1, h2, p, .font, button {
@@ -118,7 +120,7 @@ p {
 }
 
 #explain-box {
-    display: flex;
+    display: contents;
     position: absolute;
     right: 40%;
     margin: 30px;
