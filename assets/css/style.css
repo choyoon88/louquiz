@@ -140,6 +140,29 @@ p {
 }
 
 /* media query */
+
+@media screen and (max-height: 477px) {
+    #small-screen-important {
+        top: 93% !important;
+    }
+
+    #control-score {
+        top: 65% !important;
+        right: 1% !important;
+    }
+}
+
+@media screen and (max-height: 660px) {
+    .image {
+        top: 75% !important;
+    }
+
+    #control-score {
+        top: 65% !important;
+        right: 1% !important;
+    }
+}
+
 @media screen and (min-width: 200px) and (max-width: 299px) {
     h1 {
         font-size: 3em;
