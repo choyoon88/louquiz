@@ -246,14 +246,14 @@ function clearStatusClass(element) {
  * Increment score by +1 when correct answer was selected
  */
 function incrementScore() {
-    let oldScore = parseInt(document.getElementById('correct-num').innerText);
-    document.getElementById('correct-num').innerText = ++oldScore;
+    const oldScore = parseInt(document.getElementById('correct-num').innerText);
+    document.getElementById('correct-num').innerText = oldScore +1;
 }
 
 /**
  * Increment score by +1 when incorrect answer was selected
  */
 function incrementWrongScore() {
-    let oldScore = parseInt(document.getElementById('incorrect-num').innerText);
-    document.getElementById('incorrect-num').innerText = ++oldScore;
+    const oldScore = parseInt(document.getElementById('incorrect-num').innerText);
+    document.getElementById('incorrect-num').innerText = oldScore +1;
 }
