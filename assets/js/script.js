@@ -66,11 +66,11 @@ const questionContainerElement = document.getElementById('question-container');
 const questionElement = document.getElementById('question');
 const answerButtonsElement = document.getElementById('answer-buttons');
 
-const imageEl = document.getElementById('answer-image');
+// const imageEl = document.getElementById('answer-image');
 const explantionEl = document.getElementById('explanation');
 const answerImage = document.getElementById('answer-image');
 
-let shuffledQuestion, currentQuestionIndex
+let shuffledQuestion, currentQuestionIndex;
 
 startButton.addEventListener('click', startGame);
 nextButton.addEventListener('click', () => {
@@ -78,7 +78,7 @@ nextButton.addEventListener('click', () => {
     nextGame();
     const hideExplanation = document.getElementById('explanation');
     hideExplanation.classList.add('hidden');
-})
+});
 
 /**
  * Hide the start button once clicking the start.
@@ -90,10 +90,10 @@ function startGame() {
     document.getElementById('correct-num').innerText = '0';
     document.getElementById('incorrect-num').innerText = '0';
     startButton.classList.add('hidden');
-    shuffledQuestion = myQuestions.sort(() => Math.random() - .5);
+    shuffledQuestion = myQuestions.sort(() => Math.random() - 0.5);
     currentQuestionIndex = 0;
     questionContainerElement.classList.remove('hidden');
-    nextGame()
+    nextGame();
 }
 
 
@@ -132,7 +132,7 @@ function showQuestion(myQuestions) {
         }
         button.addEventListener('click', selectAnswer);
         answerButtonsElement.appendChild(button);
-    })
+    });
 }
 
 /**
@@ -204,7 +204,7 @@ function selectAnswer(e) {
         answerImage.classList.add('sticker');
     } else if (questionElement.innerText === 'In the photograph of Joel and his daughter Sarah, what football shirt is she wearing?') {
         answerImage.classList.add('argentina');
-    };
+    }
 
     if (shuffledQuestion.length > currentQuestionIndex +1) {
         nextButton.classList.remove('hidden');

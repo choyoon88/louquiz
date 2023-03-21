@@ -83,6 +83,26 @@ The Last of Us Quiz Challenge is a small quiz website designed for those gamers 
 #### __CSS__
   - No errors or bugs were found when passing through the official [W3C Validator check](https://validator.w3.org/#validate_by_input)
 
+#### __JavaScript__
+  - Passed my JS codes using [JSHint](https://jshint.com/) 
+  - Six warnings were found:
+    - 73	Missing semicolon.
+    - 81	Missing semicolon.
+    - 93	A leading decimal point can be confused with a dot: '.5'.
+    - 96	Missing semicolon.
+    - 135	Missing semicolon.
+    - 207	Unnecessary semicolon.
+     > Row 73, 81, 96, 135: Add semicolon
+
+     > Row 207: Remove semicolon
+
+     > Row 93: Change from .5 to 0.5
+
+  - One unused variable found:
+    - 69	imageEl
+    > Disabled the const imageEl = document.getElementById('answer-image');
+
+
 ### Lighthouse 
 
 #### __Desktop__
