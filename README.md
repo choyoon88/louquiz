@@ -86,8 +86,8 @@ The Last of Us Quiz Challenge is a small quiz website designed for those gamers 
 ### Lighthouse 
 
 #### __Desktop__
-  ![lighthouse desktop](readme-images/lighthouse-desktop.png)
-
+  ![lighthouse desktop](readme-images/lighthouseDesktop.png)
+**100%!**
 #### __Mobile__
   ![lighthouse mobile](readme-images/lighthouse-mobile.png)
   
