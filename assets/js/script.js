@@ -2,7 +2,7 @@
  * My questions and answers list
  */
 const myQuestions = [{
-        question: `What is the name of Ellie's mother?`,
+        question: `What is the name of Ellie's mother? (We never meet but it is mentioned somewhere...)`,
         answers: [
             { text: 'Jane', correct: false },
             { text: 'Anna', correct: true },
@@ -194,7 +194,7 @@ function selectAnswer(e) {
         setStatusClass(button, button.dataset.correct);
     });
 
-    if (questionElement.innerText === `What is the name of Ellie's mother?`) {
+    if (questionElement.innerText === `What is the name of Ellie's mother? (We never meet but it is mentioned somewhere...)`) {
         answerImage.classList.add('anna');
     } else if (questionElement.innerText === 'What animal constantly pops up in the background throughout the first game?') {
         answerImage.classList.add('giraffe');
