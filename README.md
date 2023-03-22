@@ -114,6 +114,20 @@ The Last of Us Quiz Challenge is a small quiz website designed for those gamers 
 ### Unfixed Bugs
   - There is no unfixed bugs. 
 
+### Functional Testing
+Functional testing performed for every single actions that could be taken within the website. If the actual behavior is the same as the expected behavior, it will be marked with P for pass, or not F for fail.
+
+| Action | Expected Behavior    | Actual Behavior    |
+| :---:   | :---: | :---: |
+| Enter the website with the correct url: https://choyoon88.github.io/louquiz/ | <p align="left"> - Direct to the quiz website </p> | P
+| Click 'Start' to commence quiz | <p align="left"> - Randomized quiz question with 4 answer options should be displayed on the middle of the screen <br> - 'Start' button should be hidden</p> | P
+| Click any answer from the 4 options | <p align="left"> - Clicked answer box should have a blue border <br> - Answer texts colour should change according to the answers being either correct (one <span style="color:green">green</span>) or incorrect (three <span style="color:red">red</span>) <br> - 'Next' button should appear on the right side of the screen <br> - Explanation text should appear underneath the question area <br> - Screenshot from the game to support the answer should appear on the image area </p> | P
+| Select the correct answer | <p align="left"> - Increment of 1 should be added up on 'Correct Answer' scoreboard </p> | P
+| Select the incorrect answer | <p align="left"> - Increment of 1 should be added up on 'Incorrect Answer' scoreboard</p> | P
+| Click 'Next' | <p align="left"> - Randomized question with 4 answer options should be displayed. <br> - The question should not be the one already shown before. <br> - Explanation area and the Explanation Image from the previous question should be hidden <br> - 'Next' button should be hidden</p> | P
+| Once reached the last question and select an answer | <p align="left"> - Same functions when clicking the answer button should work (See above 'Click any answer from the 4 options') <br> - 'Restart' Button should show up</p> | P
+| Click 'Restart' | <p align="left"> - Same functionality as the 'Start' button: Game should start again</p> | P 
+
 ## Deployment
 
 - The site was deployed to GitHub pages. The steps to deploy are as follows: 
@@ -152,8 +166,9 @@ Searched for assistance and tips for various codes.
 
 ### Content 
 
+- [The Last of Us Part1](https://www.playstation.com/en-ie/games/the-last-of-us-part-i/) & [Part2](https://www.playstation.com/en-ie/games/the-last-of-us-part-ii/) from PlayStation: Image screenshots were taken from the game.
 - [Quiz Question](https://twinfinite.net/2022/08/the-hardest-the-last-of-us-trivia-quiz-youll-ever-take/): 
-Took every quiz questions.
+Every quiz questions were taken from this website.
 - [Google Font](https://fonts.google.com/): Font was used from Google Font.
 - [Favicon Source](https://www.pngitem.com/middle/hiiJwT_the-last-of-us-wiki-last-of-us/): Favicon was downloaded from here. 
 
