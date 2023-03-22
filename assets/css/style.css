@@ -155,8 +155,8 @@ p {
 
     #question-container {
         display: block;
-        width: 75%;
-        height: 75%;
+        width: 50%;
+        height: 50%;
     }
 }
 
@@ -166,14 +166,14 @@ p {
     }
 
     #control-score {
-        top: 52% !important;
+        top: 57% !important;
         right: 1% !important;
     }
 
     #question-container {
         display: block;
-        width: 75%;
-        height: 75%;
+        width: 100% !important;
+        height: 50% !important;
     }
 }
 
