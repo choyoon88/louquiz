@@ -3,7 +3,7 @@
     background-size: cover;
     overflow: hidden;
     position: absolute;
-    top: 54%;
+    top: 60%;
     right: 25%;
     /* margin-left: auto;
     margin-right: auto; */
@@ -453,7 +453,7 @@ p {
     #question-container {
         position: relative;
         display: block;
-        width: 100%;
+        width: 75%;
         height: 75%;
     }
 
@@ -484,7 +484,7 @@ p {
     #question-container {
         position: relative;
         display: block;
-        width: 100%;
+        width: 75%;
         height: 75%;
     }
 
@@ -493,7 +493,7 @@ p {
     }
 
     #explain-box {
-        display: flex;
+        display: contents;
         position: absolute;
         right: 20%;
         margin: 1px;
