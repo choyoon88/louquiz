@@ -21,7 +21,7 @@ const myQuestions = [{
             {text: 'Giraffe', correct: true}
         ], 
         image: '', 
-        explain: `From Sarah's room to the movie theater called Giraffe Park, giraffes are all over the first game in the series, leading to a scene where Ellie meets one for the first time.`
+        explain: `From Sarah's room to the movie theater 'Giraffe Park', giraffes are all over the first game, leading to a scene where Ellie meets one for the first time.`
     },
     {
         question: 'What item does Ellie keep of Sam\'s that can be seen in her room at the start of The Last of Us Part II?',
